@@ -1,0 +1,47 @@
+[
+  {
+    "timestamp": "2025-11-10T10:15:30Z",
+    "subsystem": "Navigation",
+    "error_code": "NAV-001",
+    "severity": "HIGH",
+    "description": "Star tracker lost lock on reference stars.",
+    "telemetry_id": "TLM-10001",
+    "resolved": false
+  },
+  {
+    "timestamp": "2025-11-10T10:16:05Z",
+    "subsystem": "Power",
+    "error_code": "PWR-013",
+    "severity": "CRITICAL",
+    "description": "Bus voltage dipped below safe threshold.",
+    "telemetry_id": "TLM-10002",
+    "resolved": false
+  },
+  {
+    "timestamp": "2025-11-10T10:17:42Z",
+    "subsystem": "Navigation",
+    "error_code": "NAV-001",
+    "severity": "HIGH",
+    "description": "Star tracker lock reacquired with degraded confidence.",
+    "telemetry_id": "TLM-10003",
+    "resolved": true
+  },
+  {
+    "timestamp": "2025-11-10T10:18:10Z",
+    "subsystem": "Thermal",
+    "error_code": "THM-007",
+    "severity": "MEDIUM",
+    "description": "Localized temperature drift above expected range.",
+    "telemetry_id": "TLM-10004",
+    "resolved": true
+  },
+  {
+    "timestamp": "2025-11-10T10:19:55Z",
+    "subsystem": "Communications",
+    "error_code": "COM-021",
+    "severity": "HIGH",
+    "description": "Intermittent signal loss detected on downlink channel.",
+    "telemetry_id": "TLM-10005",
+    "resolved": false
+  }
+]

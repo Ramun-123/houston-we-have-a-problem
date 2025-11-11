@@ -1,0 +1,8 @@
+2025-11-11 10:23:40,000 [INFO] [auth-service] (EVT100) Starting authentication flow for user id=42
+2025-11-11 10:23:42,050 [INFO] [auth-service] (EVT101) Received login request from IP 192.168.1.10
+2025-11-11 10:23:45,123 [ERROR] [auth-service] (ERR401) Unauthorized access attempt at /api/login
+2025-11-11 10:24:01,987 [WARNING] [auth-service] (ERR422) Password validation failed for user id=42
+2025-11-11 10:25:10,000 [INFO] [payments-service] (EVT200) Initiating payment for order #1234
+2025-11-11 10:25:33,555 [ERROR] [payments-service] (ERR504) Timeout while calling external fraud service
+2025-11-11 10:27:10,321 [ERROR] [payments-service] (ERR500) Unhandled exception while processing payment callback
+2025-11-11 10:30:02,789 [INFO] [reporting-service] (EVT300) Generated daily error trend report

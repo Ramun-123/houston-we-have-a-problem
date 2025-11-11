@@ -1,0 +1,9 @@
+# Sample raw telemetry input description
+# This file illustrates where you could point the scraper for alternative inputs,
+# such as:
+#   - A live telemetry socket
+#   - A mission control REST API
+#   - Plain-text log files rotated by your ground segment
+
+# In this reference implementation, the pipeline uses data/sample_logs.json by default.
+# To experiment with your own data, provide a JSON or JSONL file and run:

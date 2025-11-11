@@ -1,0 +1,17 @@
+{
+  "log_file": "data/sample_logs.txt",
+  "output": {
+    "json": "data/results.json",
+    "csv": "data/results.csv"
+  },
+  "anomaly_threshold": 2,
+  "min_severity": "warning",
+  "severity_mapping": {
+    "CRITICAL": "critical",
+    "FATAL": "critical",
+    "ERROR": "error",
+    "WARN": "warning",
+    "INFO": "info",
+    "DEBUG": "low"
+  }
+}

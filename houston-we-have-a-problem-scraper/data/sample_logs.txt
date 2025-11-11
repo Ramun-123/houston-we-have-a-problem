@@ -1,0 +1,11 @@
+[2025-11-10 09:00:01] [INFO] [auth-service] EVT0001: User login succeeded | user_id=123 ip=10.0.0.1
+[2025-11-10 09:05:14] [WARN] [billing-service] WARN2001: Payment gateway response slow | latency_ms=1200 provider=stripe
+[2025-11-10 09:05:45] [ERROR] [billing-service] ERR3001: Payment authorization failed | user_id=456 amount=29.99 currency=USD
+[2025-11-10 09:06:02] [ERROR] [billing-service] ERR3001: Payment authorization failed | user_id=789 amount=49.99 currency=USD
+[2025-11-10 09:06:18] [ERROR] [billing-service] ERR3001: Payment authorization failed | user_id=321 amount=9.99 currency=USD
+[2025-11-10 09:10:10] [INFO] [notification-service] EVT1001: Email delivered | template=welcome user_id=123
+[2025-11-10 09:15:27] [ERROR] [auth-service] ERR1001: Invalid credentials | user_id=999 ip=10.0.0.5
+[2025-11-10 09:17:43] [CRITICAL] [db-cluster] CRIT5001: Primary node unreachable | node=db-1 region=us-east-1
+[2025-11-10 09:18:11] [WARN] [cache-service] WARN2100: Cache hit ratio low | hit_ratio=0.65 window=5m
+[2025-11-10 09:19:55] [ERROR] [db-cluster] ERR5100: Deadlock detected | tx_id=abc123 table=orders
+Arbitrary non-standard log line that will still be captured as a generic info entry.

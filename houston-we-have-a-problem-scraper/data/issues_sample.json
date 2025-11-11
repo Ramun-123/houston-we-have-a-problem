@@ -1,0 +1,10 @@
+[
+  {
+    "sourceUrl": "https://example.com/test",
+    "errorType": "missing_data",
+    "errorMessage": "Missing title tag",
+    "timestamp": 1699999999,
+    "severity": "medium",
+    "context": {"element": "title"}
+  }
+]

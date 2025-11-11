@@ -1,0 +1,11 @@
+{
+  "paths": {
+    "log_file": "data/logs/test_log.txt",
+    "output_file": "data/sample_errors.json"
+  },
+  "notifications": {
+    "enabled": true,
+    "min_severity": "critical"
+  },
+  "log_url_base": "https://monitoring.example.com/logs"
+}

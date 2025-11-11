@@ -1,0 +1,29 @@
+{
+  "archive_csv": "data/archives/error_history.csv",
+  "jsonl_path": "data/logs/errors.jsonl",
+  "log_input_dir": "data/logs",
+  "alert_thresholds": {
+    "critical": 1,
+    "error": 5,
+    "warning": 20,
+    "info": 99999
+  },
+  "email": {
+    "enabled": false,
+    "host": "smtp.example.com",
+    "port": 587,
+    "username": "",
+    "password": "",
+    "from": "houston@example.com",
+    "to": "devops@example.com",
+    "use_tls": true
+  },
+  "webhook": {
+    "enabled": false,
+    "url": ""
+  },
+  "report": {
+    "trend_csv": "data/archives/daily_trends.csv",
+    "recent_sample": 200
+  }
+}

@@ -1,0 +1,16 @@
+if argv:
+        data_path = Path(argv[0]).resolve()
+    else:
+        data_path = DEFAULT_DATA_PATH
+
+    try:
+        report_path = run_pipeline(config, data_path)
+    except Exception as exc:
+        logger.exception("Pipeline execution failed: %s", exc)
+        return 1
+
+    logger.info("Report generated at: %s", report_path)
+    return 0
+
+if __name__ == "__main__":
+    raise SystemExit(main())

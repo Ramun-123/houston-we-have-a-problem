@@ -1,0 +1,17 @@
+{
+  "ingestion": {
+    "source": "data/sample_logs.json",
+    "format": "json"
+  },
+  "alerting": {
+    "critical_error_threshold": 1,
+    "lookback_minutes": 60
+  },
+  "severity_levels": {
+    "LOW": 1,
+    "MEDIUM": 2,
+    "HIGH": 3,
+    "CRITICAL": 4,
+    "UNKNOWN": 0
+  }
+}

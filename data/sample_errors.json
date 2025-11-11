@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "source_log": "data/logs/test_log.txt",
+    "generated_at": "2025-11-11T12:00:00Z",
+    "total_errors": 4
+  },
+  "summary": {
+    "total": 4,
+    "by_severity": {
+      "critical": 3,
+      "warning": 1
+    },
+    "by_component": {
+      "auth-service": 2,
+      "payments-service": 1,
+      "reporting-service": 1
+    },
+    "recurring_errors": [
+      {
+        "errorCode": "ERR401",
+        "count": 2,
+        "sampleMessage": "Unauthorized access attempt at /api/login"
+      }
+    ],
+    "latest_errors": [
+      {
+        "errorCode": "ERR500",
+        "errorMessage": "Unhandled exception while processing payment callback",
+        "timestamp": "2025-11-11T10:27:10.321000",
+        "systemComponent": "payments-service",
+        "severity": "critical",
+        "logUrl": "https://monitoring.example.com/logs/?errorCode=ERR500&line=7"
+      }
+    ]
+  },
+  "errors": [
+    {
+      "errorMessage": "Unauthorized access attempt at /api/login",
+      "errorCode": "ERR401",
+      "timestamp": "2025-11-11T10:23:45.123000",
+      "systemComponent": "auth-service",
+      "severity": "critical",
+      "logUrl": "https://monitoring.example.com/logs/?errorCode=ERR401&line=3",
+      "level": "ERROR",
+      "lineNumber": 3
+    },
+    {
+      "errorMessage": "Password validation failed for user id=42",
+      "errorCode": "ERR422",
+      "timestamp": "2025-11-11T10:24:01.987000",
+      "systemComponent": "auth-service",
+      "severity": "warning",
+      "logUrl": "https://monitoring.example.com/logs/?errorCode=ERR422&line=4",
+      "level": "WARNING",
+      "lineNumber": 4
+    },
+    {
+      "errorMessage": "Timeout while calling external fraud service",
+      "errorCode": "ERR504",
+      "timestamp": "2025-11-11T10:25:33.555000",
+      "systemComponent": "payments-service",
+      "severity": "critical",
+      "logUrl": "https://monitoring.example.com/logs/?errorCode=ERR504&line=6",
+      "level": "ERROR",
+      "lineNumber": 6
+    },
+    {
+      "errorMessage": "Unhandled exception while processing payment callback",
+      "errorCode": "ERR500",
+      "timestamp": "2025-11-11T10:27:10.321000",
+      "systemComponent": "payments-service",
+      "severity": "critical",
+      "logUrl": "https://monitoring.example.com/logs/?errorCode=ERR500&line=7",
+      "level": "ERROR",
+      "lineNumber": 7
+    }
+  ]
+}

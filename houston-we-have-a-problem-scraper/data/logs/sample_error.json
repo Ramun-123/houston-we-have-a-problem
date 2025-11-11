@@ -1,0 +1,12 @@
+{
+  "timestamp": "2025-11-10T16:05:12Z",
+  "errorType": "DatabaseError",
+  "message": "Failed to acquire connection from pool",
+  "stackTrace": "Traceback (most recent call last):\n  File \"db.py\", line 42, in connect\nConnectionTimeout: pool exhausted",
+  "severity": "error",
+  "sourceFile": "services/db.py",
+  "lineNumber": 42,
+  "environment": "staging",
+  "device": "api-node-3",
+  "resolved": false
+}
